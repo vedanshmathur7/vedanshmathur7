@@ -71,21 +71,17 @@
 ---
 
 ### GitHub Stats:
+<!-- GitHub Stats - Center -->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=vedanshmathur7&show_icons=true&theme=radical" alt="GitHub Stats" />
+</p>
 
-<!-- Flex container for left and right cards -->
-<div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-  <!-- Left-aligned GitHub Stats -->
-  <div>
-    <img src="https://github-readme-stats.vercel.app/api?username=vedanshmathur7&show_icons=true&theme=radical" alt="GitHub Stats" />
-  </div>
+<!-- Top Languages - Center -->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vedanshmathur7&layout=compact&theme=radical" alt="Top Languages" />
+</p>
 
-  <!-- Right-aligned Top Languages -->
-  <div>
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vedanshmathur7&layout=compact&theme=radical" alt="Top Languages" />
-  </div>
-</div>
-
-<!-- Centered Streak Stats -->
+<!-- GitHub Streak - Center -->
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com?user=vedanshmathur7&theme=radical" alt="GitHub Streak" />
 </p>
