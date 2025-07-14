@@ -12,8 +12,7 @@
 </p>
 
 ---
-
-### Connect with me
+### Connect with me:
 
 <p align="left">
   <a href="https://twitter.com/vedanshmathur_7" target="_blank">
@@ -31,8 +30,7 @@
 </p>
 
 ---
-
-### Favourite Languages & Tools
+### Favourite Languages & Tools:
 
 <p align="left">
   <a href="#"><img alt="Python" src="https://img.shields.io/badge/Python-14354C.svg?logo=python&logoColor=white" /></a>
@@ -46,8 +44,7 @@
 </p>
 
 ---
-
-### Languages and Tools I've Worked With
+### Languages and Tools I've Worked With:
 
 <p align="left">
   <a href="#"><img alt="Python" src="https://img.shields.io/badge/Python-14354C.svg?logo=python&logoColor=white" /></a>
@@ -69,7 +66,6 @@
 </p>
 
 ---
-
 ### GitHub Stats:
 <!-- GitHub Stats - Center -->
 <p align="center">
