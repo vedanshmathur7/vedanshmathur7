@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Vedansh Mathur</h1>
+<h1 align="center">Hi, I'm Vedansh Mathur</h1>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=vedanshmathur7&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
@@ -13,7 +13,7 @@
 
 ---
 
-### 🌐 Connect with me
+### Connect with me
 
 <p align="left">
   <a href="https://twitter.com/vedanshmathur_7" target="_blank">
@@ -32,7 +32,22 @@
 
 ---
 
-### 💼 Languages and Tools I've Worked With
+### Favourite Languages & Tools
+
+<p align="left">
+  <a href="#"><img alt="Python" src="https://img.shields.io/badge/Python-14354C.svg?logo=python&logoColor=white" /></a>
+  <a href="#"><img alt="C++" src="https://custom-icon-badges.demolab.com/badge/C++-9C033A.svg?logo=cpp2&logoColor=white" /></a>
+  <a href="#"><img alt="MySQL" src="https://img.shields.io/badge/MySQL-4479A1.svg?logo=mysql&logoColor=white" /></a>
+  <a href="#"><img alt="Git" src="https://img.shields.io/badge/Git-F05032.svg?logo=git&logoColor=white" /></a>
+  <a href="#"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717.svg?logo=github&logoColor=white" /></a>
+  <a href="#"><img alt="VS Code" src="https://img.shields.io/badge/VS%20Code-007ACC.svg?logo=visual-studio-code&logoColor=white" /></a>
+  <a href="#"><img alt="Scikit-Learn" src="https://img.shields.io/badge/Scikit--Learn-F7931E.svg?logo=scikit-learn&logoColor=white" /></a>
+  <a href="#"><img alt="Jupyter Notebook" src="https://img.shields.io/badge/Jupyter-F37626.svg?logo=jupyter&logoColor=white" /></a>
+</p>
+
+---
+
+### Languages and Tools I've Worked With
 
 <p align="left">
   <a href="#"><img alt="Python" src="https://img.shields.io/badge/Python-14354C.svg?logo=python&logoColor=white" /></a>
@@ -55,7 +70,7 @@
 
 ---
 
-### 📊 GitHub Stats:
+### GitHub Stats:
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=vedanshmathur7&show_icons=true&theme=radical" alt="GitHub Stats" />
