@@ -1,7 +1,7 @@
 <h1 align="center">Hi, I'm Vedansh Mathur</h1>
 
 <p align="center">
-  <a href="https://github.com/user-attachments/files/22763936/Vedansh_Mathur_resume.pdf" target="_blank">
+  <a href="https://your-resume-link-here.com/resume.pdf" target="_blank">
     <img src="https://img.shields.io/badge/Resume-PDF-red?style=flat&logo=adobeacrobatreader&logoColor=white" alt="Resume" />
   </a>
 </p>
