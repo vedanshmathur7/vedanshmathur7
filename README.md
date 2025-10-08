@@ -1,9 +1,11 @@
-<div>
-  <h1 align="center">Hi, I'm Vedansh Mathur</h1>
-  <p align="left">
-    <a href="https://github.com/user-attachments/files/22763936/Vedansh_Mathur_resume.pdf" target="_blank"><b>📄 Resume</b></a>
-  </p>
-</div>
+<h1 align="center">Hi, I'm Vedansh Mathur</h1>
+
+<p align="center">
+  <a href="https://github.com/user-attachments/files/22763936/Vedansh_Mathur_resume.pdf" target="_blank">
+    <img src="https://img.shields.io/badge/Resume-PDF-red?style=flat&logo=adobeacrobatreader&logoColor=white" alt="Resume" />
+  </a>
+</p>
+
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=vedanshmathur7&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
