@@ -13,9 +13,13 @@
 <!-- Trophy board -->
 <p align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy-three.vercel.app/?username=vedanshmathur7&theme=algolia&margin-w=10&no-bg=true&no-frame=true" alt="GitHub Trophy" />
+    <img
+      src="https://github-profile-trophy.vercel.app/?username=vedanshmathur7&theme=algolia&margin-w=10&no-bg=true&no-frame=true"
+      alt="GitHub Trophy"
+    />
   </a>
 </p>
+
 
 ---
 ### Connect with me:
