@@ -80,7 +80,7 @@
 
 <!-- Top Languages - Center -->
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vedanshmathur7&layout=compact&theme=radical" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vedanshmathur7&layout=compact&theme=radical&hide=jupyter%20notebook" />
 </p>
 
 <!-- GitHub Streak - Center -->
