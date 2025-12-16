@@ -20,7 +20,6 @@
   </a>
 </p>
 
-
 ---
 ### Connect with me:
 
@@ -86,6 +85,9 @@
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vedanshmathur7&layout=compact&theme=radical&size_weight=0&count_weight=1" />
 </p>
+
+
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=vedanshmathur7&theme=react-dark)
 
 <!-- GitHub Streak - Center -->
 <p align="center">
