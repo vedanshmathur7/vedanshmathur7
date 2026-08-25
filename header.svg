@@ -1,0 +1,35 @@
+<svg width="900" height="260" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .ascii { font-family: 'JetBrains Mono', 'Courier New', monospace; fill: #39d353; font-size: 12px; }
+      .title { font-family: 'JetBrains Mono', 'Courier New', monospace; fill: #58a6ff; font-size: 26px; font-weight: bold; }
+      .sub { font-family: 'JetBrains Mono', 'Courier New', monospace; fill: #8b949e; font-size: 13px; }
+      .cursor { fill: #39d353; }
+    </style>
+  </defs>
+
+  <rect width="900" height="260" class="bg" rx="8"/>
+
+  <!-- ASCII chip/circuit art -->
+  <text x="30" y="35" class="ascii" xml:space="preserve">   ┌────────────────────┐</text>
+  <text x="30" y="50" class="ascii" xml:space="preserve">   │  ┌──┐ ┌──┐ ┌──┐   │</text>
+  <text x="30" y="65" class="ascii" xml:space="preserve">   │  └──┘ └──┘ └──┘   │</text>
+  <text x="30" y="80" class="ascii" xml:space="preserve">───┤     C P U          ├───</text>
+  <text x="30" y="95" class="ascii" xml:space="preserve">   │  ┌──┐ ┌──┐ ┌──┐   │</text>
+  <text x="30" y="110" class="ascii" xml:space="preserve">   │  └──┘ └──┘ └──┘   │</text>
+  <text x="30" y="125" class="ascii" xml:space="preserve">   └────────────────────┘</text>
+  <text x="30" y="140" class="ascii" xml:space="preserve">     │   │   │   │   │</text>
+  <text x="30" y="155" class="ascii" xml:space="preserve">   ──┴───┴───┴───┴───┴──</text>
+
+  <!-- Title block -->
+  <text x="360" y="90" class="title">Vedansh Mathur</text>
+  <text x="360" y="118" class="sub">$ whoami</text>
+  <text x="360" y="140" class="sub">&gt; C++ / low-level systems, LLM infra on the side</text>
+  <text x="360" y="160" class="sub">&gt; SDE Intern @ WittingAI  |  B.Tech CSE, BMU '28</text>
+  <text x="360" y="180" class="sub">&gt; currently: compiling projects, not excuses</text>
+
+  <rect x="360" y="192" width="9" height="16" class="cursor">
+    <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/>
+  </rect>
+</svg>
