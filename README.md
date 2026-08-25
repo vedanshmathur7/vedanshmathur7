@@ -1,71 +1,75 @@
 <div align="center">
 
-<img src="/header.svg" alt="header" width="100%"/>
+<img src="./header.svg" width="760" alt="Vedansh Mathur - AI backend systems, LLM infra, FastAPI, AWS"/>
+
+[linkedin](https://www.linkedin.com/in/vedansh-mathur-86767a300/) &nbsp;·&nbsp;
+[github](https://github.com/vedanshmathur7) &nbsp;·&nbsp;
+[email](mailto:vedanshmathur007@gmail.com) &nbsp;·&nbsp;
+[resume](https://github.com/user-attachments/files/22764225/Vedansh_Mathur_resume.pdf)
 
 </div>
 
-<br/>
+<img src="./hd-about.svg" width="680" alt="about"/>
 
-```text
-[  OK  ] booting vedansh.sys ...
-[  OK  ] mounting /skills          -> python, c++, fastapi, docker, aws
-[  OK  ] mounting /focus           -> systems programming, low-level machines, llm infra
-[  OK  ] loading current-role.cfg  -> SDE Intern @ WittingAI (DataVox)
-[  OK  ] loading education.cfg     -> B.Tech CSE, BML Munjal University ('28)
-[ WARN ] uptime since boot         -> since 2024, still compiling
-[  OK  ] handoff to userland ...
-```
+> B.Tech CSE student at BML Munjal University, working in AI backend systems.<br>
+> I care about services that survive real data, real latency, and real product pressure.
 
-<br/>
+I build FastAPI services, LLM inference workflows, RAG pipelines, and evaluation<br>
+tools around production-ish constraints: async execution, database state,<br>
+containerized deploys, cloud storage, and model-provider quirks.
 
-### `/proc/stack`
+Right now my strongest public signal is AI backend work. The next signal I want<br>
+to earn is systems depth: C++ projects with benchmarks, memory, and runtime<br>
+behavior visible in the README, not just listed as a skill.
 
-```text
-languages   : C++ · C · Python · JavaScript · SQL · Java
-low-level   : memory management · cache behavior · embedded-adjacent (Arduino)
-backend/ai  : FastAPI · vLLM · Docker · AWS (EC2/S3) · Redis · Celery · LLM inference pipelines
-databases   : PostgreSQL · MySQL · Neo4j
-```
+<img src="./hd-stack.svg" width="680" alt="stack"/>
 
-<br/>
+<samp>
+python &nbsp; c++ &nbsp; c &nbsp; javascript &nbsp; sql &nbsp; java<br>
+fastapi &nbsp; asyncio &nbsp; sqlalchemy &nbsp; postgres &nbsp; mysql &nbsp; redis &nbsp; celery<br>
+vllm &nbsp; rag &nbsp; llm-evals &nbsp; openai/groq/gemini &nbsp; docker &nbsp; aws-ec2/s3
+</samp>
 
-### `/var/log/projects`
+<img src="./hd-projects.svg" width="680" alt="selected projects"/>
 
-```text
-[2026-01 .. 2026-06] DataVox           - llm-inference microservice, vLLM + LoRA, AWS EC2/S3
-[2026-06 .. 2026-07] CallLevelAnalytics- multi-model LLM audit workbench, async pipelines
-[2026-02]            PlagLe            - plagiarism detection backend, FastAPI
-[2026-xx-xx]         <low-level-repo>  - pending: CHIP-8 emulator / allocator (in progress)
-```
+**CallLevelAnalytics** &nbsp;·&nbsp; <samp>python, fastapi, asyncio, postgres</samp><br>
+LLM audit workbench for comparing model-generated call-quality scores against<br>
+human ground truth across a 39-parameter scorecard and multi-provider grading.
 
-<br/>
+**DataVox** &nbsp;·&nbsp; <samp>python, fastapi, vllm, docker, aws</samp><br>
+AI analytics platform work at WittingAI: inference microservices, LoRA adapter<br>
+loading from S3, GPU instance deployment, and model-training pipeline support.
 
-### `/etc/connect.conf`
+**[ModelArena](https://github.com/vedanshmathur7/ModelArena)** &nbsp;·&nbsp; <samp>python, streamlit, llm benchmarking</samp><br>
+Comparative assistant platform evaluating Qwen2.5 and Llama 3.1-8B with memory,<br>
+safety filtering, latency benchmarking, and an interactive UI.
 
-<p align="left">
-  <a href="https://linkedin.com/in/vedansh-mathur-86767a300/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="https://github.com/user-attachments/files/22764225/Vedansh_Mathur_resume.pdf"><img src="https://img.shields.io/badge/Resume-PDF-adobeacrobatreader?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" /></a>
-  <a href="https://twitter.com/vedanshmathur_7"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" /></a>
-  <a href="https://instagram.com/vedanshmathur_7"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
-  <a href="https://www.leetcode.com/vedanshmathur_7"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" /></a>
-</p>
+**[PlagLe](https://github.com/vedanshmathur7/PlagLe)** &nbsp;·&nbsp; <samp>fastapi, mysql, docker</samp><br>
+Backend for multi-document plagiarism analysis with similarity scoring and<br>
+structured report generation.
 
-<br/>
+<img src="./hd-stats.svg" width="680" alt="signal"/>
 
-### `/proc/stats`
+<div align="center">
 
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=vedanshmathur7&show_icons=true&theme=synthwave&hide_border=true" height="165"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=vedanshmathur7&theme=synthwave&hide_border=true" height="165"/>
-</p>
+<img src="./stats.svg" width="680" alt="GitHub contribution summary"/>
 
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vedanshmathur7&layout=compact&theme=synthwave&hide_border=true" height="165"/>
-</p>
+<img src="./langs.svg" width="680" alt="Top public repository languages"/>
 
-<br/>
+<img src="./year.svg" width="680" alt="Last year contribution grid"/>
 
-```text
-[  OK  ] end of transmission
-```
 </div>
+
+<img src="./hd-roadmap.svg" width="680" alt="build roadmap"/>
+
+```text
+ship next:
+  01. publish CallLevelAnalytics cleanly, or replace it here with a public repo
+  02. pin repos in this order: CallLevelAnalytics, ModelArena, PlagLe, Greywater, then best 2 recent apps
+  03. build one C++ systems repo: cache-aware benchmarks or a small allocator
+  04. publish a personal site that expands these projects beyond a GitHub README
+```
+
+Every graphic in this README is generated inside this repo. The scheduled<br>
+workflow uses GitHub's GraphQL API and commits only local SVG assets, so the<br>
+profile does not depend on third-party stat-card services.

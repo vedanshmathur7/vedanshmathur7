@@ -1,51 +1,141 @@
-# GitHub Profile Revamp Plan — vedanshmathur7
+# GitHub Profile Plan - vedanshmathur7
 
-**Goal:** Make the GitHub profile read as "C++ / low-level systems developer" instead of the current generic AI/backend template README. Anyone (Vedansh, or a fresh Claude session) can pick up from wherever this stopped — just check the boxes.
+This is the handoff plan for making the profile look like a serious engineering signal, not a decorative README.
 
-**Current state (checked 2026-08-25):**
-- Profile README exists at `vedanshmathur7/vedanshmathur7` — has shields.io badges, GitHub stats/streak/trophy widgets (generic template style, thousands of profiles look like this).
-- Pinned repos: CallSight (JS), agrochain (fork, TS), Insurance-Cost-Prediction (Jupyter), ModelArena (Python), PlagLe (JS), ReLive-AI (JS). **Zero C++/low-level repos pinned or visible.**
-- Resume lists C++ and C as languages but no dedicated low-level project exists yet in the visible repo list.
-- Reference profile liked: `github.com/andriidrok1` — custom ASCII art + auto-generated SVGs via GitHub Actions, JetBrains Mono, dark terminal aesthetic.
+## Current Verdict
 
----
+The reference repo works because it has three things at once:
 
-## Phase 0 — Decide the actual positioning (do this first, 5 min)
-- [ ] Confirm identity: "systems/low-level C++ dev learning towards embedded" vs "backend+AI dev who also does C++ for fun." Be honest — overselling a vibe with nothing behind it reads worse than owning the AI-backend work and treating C++ as a growing focus.
-- [ ] Pick 1 sentence for the README hero line reflecting this (e.g. "FastAPI/LLM infra by day, chasing cycles and cache misses by night").
+- Custom generated SVGs that do not depend on third-party README-stat services.
+- A short, sharp identity with no generic badge wall.
+- Projects that match the claimed identity.
 
-## Phase 1 — Backing content (the part that actually matters)
-Without this, the README is decoration. Pick 1–2 to build:
-- [ ] **CHIP-8 emulator in C++** — classic, small, universally recognized as a "real" low-level project, ~1–2 weekends.
-- [ ] **Custom memory allocator** (malloc/free reimplementation with a free-list or buddy allocator) — directly demonstrates low-end-machine thinking.
-- [ ] **Tiny cooperative task scheduler / RTOS-lite** in C++ for a microcontroller (or simulated) — pairs well with the Arduino badge already on the profile.
-- [ ] **Cache-aware benchmark repo** — e.g. matrix multiply / linked-list traversal comparisons showing cache-line effects, with graphs. Good because it's visual + quantifiable.
-- [ ] Once built: **pin it** on the GitHub profile (replace 1–2 of the current JS/AI pins), add a proper repo description + topics (`cpp`, `embedded`, `systems-programming`, `low-level`).
+Your strongest proven identity from the resume and LinkedIn export is not "pure low-level C++" yet. It is:
 
-## Phase 2 — README structure (the "vibe" part)
-Rewrite `vedanshmathur7/vedanshmathur7/README.md`. Two directions discussed — pick one or merge:
-- [ ] **Boot-log style**: whole README framed as a fake system boot sequence (`[ OK ] Mounting /skills`, `[ OK ] Loading vedansh.sys`, register-dump-style stats block).
-- [ ] **neofetch-card style**: custom SVG with ASCII/circuit art on the left, info block on the right (Focus: Systems/Embedded, Languages, Uptime since 2023, etc.) generated via a script, not a static image, so it can auto-refresh.
-- [ ] Keep the good parts already there (contact badges, resume link) but swap the generic shields.io skill badges for something less templated — either the neofetch card or a monospace text block.
-- [ ] Font: JetBrains Mono / monospace throughout, dark theme — matches the systems-dev aesthetic and is consistent with the andriidrok1 reference.
+> AI backend systems: FastAPI services, LLM inference/evaluation workflows, async pipelines, databases, Docker, and AWS.
 
-## Phase 3 — Visual assets (SVGs)
-- [ ] Build 1 custom SVG: ASCII-art chip/circuit-board header, rendered as SVG (not a raw image) so it stays crisp and can be theme-aware (light/dark).
-- [ ] Optional: a "compile-time" or "lines of C++" joke stat instead of generic contribution stats — more on-brand than default streak widgets.
-- [ ] Store SVG-generation scripts in a `scripts/` folder in the profile repo (mirrors what andriidrok1 does) so it's clearly automated, not hand-edited.
+That is the profile direction implemented in this repo. The low-level/systems angle should be built next through real repos, not only README language.
 
-## Phase 4 — Automation (GitHub Actions)
-- [ ] Add a `.github/workflows/` action that regenerates the stats/ASCII SVGs on a schedule (daily/weekly) and commits them — this is what makes a profile look "alive" vs a one-time edit.
-- [ ] Keep it simple at first: a Python or Node script that outputs SVG, run on a cron trigger.
+## What Was Changed
 
-## Phase 5 — Polish
-- [ ] Add repo topics/tags to every real project (helps discoverability + signals intentionality).
-- [ ] Reorder pinned repos: lead with the new C++/low-level project(s), then ModelArena/CallSight (real AI work), drop weaker ones (forked agrochain, empty PlagLe/ReLive-AI if they have no README).
-- [ ] Add short, punchy one-line descriptions to every repo (GitHub shows this next to the name — currently several have no description).
+- Rewrote `README.md` around AI backend systems and LLM infra.
+- Removed third-party GitHub stat-card widgets from the main design.
+- Added generated local SVG assets:
+  - `header.svg`
+  - `hd-about.svg`
+  - `hd-stack.svg`
+  - `hd-projects.svg`
+  - `hd-stats.svg`
+  - `hd-roadmap.svg`
+  - `stats.svg`
+  - `langs.svg`
+  - `year.svg`
+- Added `scripts/generate_profile.py` to regenerate all SVGs.
+- Added `.github/workflows/profile.yml` to refresh assets daily and on manual dispatch.
+- Added local JetBrains Mono font assets under `scripts/fonts/`.
 
----
+## Immediate Fixes Needed From Vedansh
 
-## Notes for whoever continues this
-- Don't just theme the README — Phase 1 (real project) is the actual differentiator. A boot-log README pointing at JS/Jupyter repos will look like cosplay.
-- Reference profile for visual style: `github.com/andriidrok1`.
-- Vedansh's current stack for context: Python/FastAPI/AWS/LLM infra (day job at WittingAI on DataVox) + wants to build out C++/low-level as a second identity.
+1. Make `CallLevelAnalytics` public, or provide the correct public repo URL.
+   - Current public check: `https://github.com/vedanshmathur7/CallLevelAnalytics` returns 404.
+   - Until fixed, the README mentions it without a link.
+
+2. Decide whether PlagLe should be presented as FastAPI/backend or full-stack.
+   - Public GitHub shows `plagle-backend` and `plagle-frontend`.
+   - Resume says Python/FastAPI/MySQL/Docker.
+   - README currently frames it as backend, which is fine only if the backend folder is substantial and documented.
+
+3. Upload or link a current resume URL.
+   - README keeps the existing GitHub attachment link.
+   - Better: add `resume.pdf` to a personal site or release asset and link that stable URL.
+
+4. Pin repositories in this order:
+   - CallLevelAnalytics, once public and cleaned.
+   - ModelArena.
+   - PlagLe.
+   - Greywater Recycling and Smart Irrigation System.
+   - Best recent deployed app.
+   - One new C++/systems repo once built.
+
+## Repo-Level Work To Do Next
+
+### CallLevelAnalytics
+
+Goal: make it the flagship repo.
+
+Checklist:
+
+- Add a top-level README with problem, architecture, setup, screenshots, and evaluation output.
+- Add `.env.example`.
+- Add a small anonymized sample dataset or generated fixture.
+- Add a `docs/architecture.md` or architecture diagram.
+- Add a one-command local smoke test.
+- Add repo topics: `fastapi`, `llm-evaluation`, `asyncio`, `postgresql`, `openai`, `rag`, `aws`.
+
+### ModelArena
+
+Goal: keep it as the public LLM comparison/demo repo.
+
+Checklist:
+
+- Ensure the Hugging Face demo link still works.
+- Put screenshots near the top of the README.
+- Keep evaluation tables, but make the first 30 seconds of reading crisp.
+- Add badges only for deployment/test status if they are real.
+
+### PlagLe
+
+Goal: make it look like a maintained product/backend repo, not a random hackathon dump.
+
+Checklist:
+
+- Add a root README if missing.
+- Document `plagle-backend` and `plagle-frontend` separately.
+- Add setup instructions for local backend, frontend, and database.
+- Add screenshots or a deployed link preview.
+- Add topics: `fastapi`, `plagiarism-detection`, `mysql`, `document-analysis`, `full-stack`.
+
+### New Systems Repo
+
+Goal: earn the low-level/systems identity.
+
+Pick one:
+
+- `cachelab-cpp`: cache-aware benchmarks for arrays, linked lists, matrix traversal, and struct layout.
+- `tiny-allocator`: malloc/free style allocator with free list, coalescing, fragmentation tests, and benchmark notes.
+- `chip8-cpp`: CHIP-8 emulator with SDL display, instruction tests, and ROM screenshots.
+
+Best first choice: `cachelab-cpp`. It is fastest to ship, visual, benchmarkable, and easier to explain than an emulator.
+
+Required README shape:
+
+- What the project proves.
+- How to run.
+- Benchmarks with machine info.
+- Graphs or tables.
+- What changed after optimization.
+- Clear limitations.
+
+## Profile README Maintenance
+
+Run locally:
+
+```bash
+python3 scripts/generate_profile.py
+```
+
+Without `GITHUB_TOKEN`, the generated stats use fallback values. On GitHub Actions, `secrets.GITHUB_TOKEN` is available automatically and will render real contribution/language data.
+
+Manual GitHub refresh:
+
+1. Push the repo.
+2. Open Actions.
+3. Run the `profile` workflow manually if needed.
+
+## What Not To Do
+
+- Do not claim "low-level systems engineer" until there is at least one strong C++ systems repo pinned.
+- Do not add a wall of shields.io skill badges.
+- Do not link dead/private repos from the profile README.
+- Do not use generic GitHub stat-card services as the main visual identity.
+- Do not over-explain every project. The profile README should be sharp; project READMEs carry the depth.
