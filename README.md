@@ -91,6 +91,7 @@ gurugram, in · exec member, acm bmu
   <img src="./assets/sec-07-light.svg" width="560" alt="$ ./connect">
 </picture>
 
+<p>
 <samp>
 <a href="https://www.linkedin.com/in/vedansh-mathur-86767a300/">$ ssh vedansh@linkedin</a><br>
 <a href="https://x.com/vedanshmathur_7">$ curl x.com/vedanshmathur_7</a><br>
@@ -98,8 +99,9 @@ gurugram, in · exec member, acm bmu
 <a href="https://linktr.ee/vedanshmathur_7">$ cat linktr.ee/vedanshmathur_7</a><br>
 <a href="https://github.com/user-attachments/files/22764225/Vedansh_Mathur_resume.pdf">$ open resume.pdf</a>
 </samp>
+</p>
 
-<br>
+<p><br></p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/return-dark.svg">
