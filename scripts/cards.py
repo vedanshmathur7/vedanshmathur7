@@ -8,6 +8,8 @@ from svgkit import ROOT, THEMES, T, document, esc, mono_w, text_width, write
 
 W, H = 400, 192
 OWNER = "vedanshmathur7"
+# rendered SVGs live on the force-pushed `output` branch, so main never gets bot commits
+ASSET_URL = f"https://raw.githubusercontent.com/{OWNER}/{OWNER}/output/"
 
 
 def wrap(text: str, n: int, max_lines: int = 2):
@@ -94,8 +96,8 @@ def readme_block(carts) -> str:
         m = p.get("metric")
         alt = f'{p["name"]}: {p["problem"]}' + (f' ({m["value"]}, {m["label"]})' if m else "")
         return (f'<a href="https://github.com/{OWNER}/{p["repo"]}">'
-                f'<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cart-{p["slug"]}-dark.svg">'
-                f'<img src="./assets/cart-{p["slug"]}-light.svg" width="400" alt="{esc(alt)}"></picture></a>')
+                f'<picture><source media="(prefers-color-scheme: dark)" srcset="{ASSET_URL}cart-{p["slug"]}-dark.svg">'
+                f'<img src="{ASSET_URL}cart-{p["slug"]}-light.svg" width="400" alt="{esc(alt)}"></picture></a>')
     rows = ["<p>\n" + "\n".join(one(p) for p in carts[i:i + 2]) + "\n</p>" for i in range(0, len(carts), 2)]
     return "\n".join(rows)
 
