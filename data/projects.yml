@@ -1,0 +1,60 @@
+# Flagship "cartridges". One SVG per entry -> assets/cart-<slug>-{dark,light}.svg
+#
+#   slug     file name, also used for ordering in the README
+#   name     display name
+#   repo     github repo name (card links here)
+#   lang     primary language label (top-right)
+#   problem  one line, ~95 chars max (wraps to 2 lines)
+#   tags     stack, 3-5 short lowercase tags
+#   metric   optional. ONLY numbers you can point to in the repo.
+#     value  big number, e.g. "52%"
+#     label  what it means, ~44 chars max
+
+cartridges:
+  - slug: finhallu
+    name: FinHallu-10K
+    repo: finhallu-10k
+    lang: python
+    problem: How often do LLMs get financial facts wrong when the answer is sitting in the 10-K?
+    tags: [vllm, bm25, sec-xbrl, evals]
+    metric:
+      value: "52%"
+      label: best open model · 182 qs over 10 filings
+
+  - slug: sourcer
+    name: Contributor Sourcer
+    repo: contributor-sourcer
+    lang: typescript
+    problem: Sources developers from merged PRs, not profiles. Every cited PR re-verified, a human signs off.
+    tags: [fastapi, react, github-graphql, agents]
+
+  - slug: minidocker
+    name: mini-docker
+    repo: V4
+    lang: c++
+    problem: A Linux container engine from first principles. No Docker, no runc, just syscalls.
+    tags: [c++17, namespaces, cgroups-v2, chroot]
+
+  - slug: modelarena
+    name: ModelArena
+    repo: ModelArena
+    lang: python
+    problem: Local Qwen2.5 vs hosted Llama 3.1-8B side by side. Memory, safety filters, latency logs.
+    tags: [ollama, groq, streamlit, docker]
+    metric:
+      value: "520 ms"
+      label: hosted vs 1550 ms local · avg, 39 prompts
+
+  - slug: handoffproof
+    name: HandoffProof
+    repo: handoffproof
+    lang: python
+    problem: Shows which form submissions never reached the CRM, with evidence from both sides.
+    tags: [fastapi, postgresql, react, typescript]
+
+  - slug: callsight
+    name: CallSight
+    repo: CallSight
+    lang: python
+    problem: Call recording in. Transcript, revenue leaks, sentiment, compliance flags and agent coaching out.
+    tags: [fastapi, openai, librosa, react]

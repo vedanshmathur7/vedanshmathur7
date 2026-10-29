@@ -1,0 +1,20 @@
+# $ ld -M — the stack, as a linker map. Only list what you actually ship with.
+sections:
+  - name: .text
+    region: core
+    symbols: [Python, C++, C, TypeScript, SQL]
+  - name: .data
+    region: backend
+    symbols: [FastAPI, asyncio, Celery, RabbitMQ, Redis]
+  - name: .bss
+    region: storage
+    symbols: [MongoDB, PostgreSQL, MySQL]
+  - name: .rodata
+    region: ml/llm
+    symbols: [vLLM, AWS Bedrock, OpenAI, scikit-learn]
+  - name: .init
+    region: infra
+    symbols: [Docker, Linux, Git, AWS EC2/S3]
+  - name: .plt
+    region: glue
+    symbols: [React, Streamlit]
