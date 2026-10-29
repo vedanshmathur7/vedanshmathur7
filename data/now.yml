@@ -1,0 +1,51 @@
+# $ htop — what's running right now.
+# Edit this file, push, and the workflow regenerates assets/htop-*.svg.
+#
+#   pid    any number (shown right-aligned, max 6 digits)
+#   name   process name, keep it <= 16 chars
+#   state  R running · S sleeping · I idle · Z zombie (shipped, unmaintained)
+#   cpu    0-100, how much of your attention it gets. R rows pulse around this value.
+#   desc   one line, <= 42 chars (longer gets truncated with an ellipsis)
+
+processes:
+  - pid: 1
+    name: datavox
+    state: R
+    cpu: 46
+    desc: nl -> sql -> charts + insights · witting ai
+
+  - pid: 64
+    name: llm-infra
+    state: R
+    cpu: 22
+    desc: inference, serving, evals. going deep.
+
+  - pid: 211
+    name: handoffproof
+    state: R
+    cpu: 14
+    desc: proves lead handoffs reached the crm
+
+  - pid: 307
+    name: dsa-visualizer
+    state: R
+    cpu: 9
+    desc: animates dsa solutions line by line
+
+  - pid: 512
+    name: finhallu-10k
+    state: S
+    cpu: 3
+    desc: llm financial-hallucination benchmark
+
+  - pid: 1024
+    name: mini-docker
+    state: S
+    cpu: 2
+    desc: c++ container engine, namespaces + cgroups
+
+  - pid: 2028
+    name: btech-cse
+    state: R
+    cpu: 4
+    desc: bml munjal university, grad 2028
