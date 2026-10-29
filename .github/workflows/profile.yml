@@ -1,15 +1,17 @@
 name: profile
 
+# Renders every SVG and force-pushes them as ONE commit to the `output` branch.
+# main never receives bot commits for images; README points at the output branch.
+# (Bot commits never counted toward your contribution graph anyway.)
+
 on:
   schedule:
-    - cron: "23 1 * * *" # daily, 06:53 IST
+    - cron: "23 1 * * *" # daily, 06:53 IST: refreshes the activity scope
   workflow_dispatch:
   push:
     branches: [main]
     paths:
-      - "data/now.yml"
-      - "data/projects.yml"
-      - "data/stack.yml"
+      - "data/**"
       - "scripts/**"
       - ".github/workflows/profile.yml"
 
@@ -17,7 +19,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: profile-${{ github.ref }}
+  group: profile
   cancel-in-progress: true
 
 jobs:
@@ -41,14 +43,41 @@ jobs:
           GH_LOGIN: ${{ github.repository_owner }}
         run: python scripts/build.py
 
-      - name: Commit only if something changed
+      - name: Publish to output branch (only if something changed)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git add -A
-          if git diff --cached --quiet; then
-            echo "no changes"
-            exit 0
+          OUT="$RUNNER_TEMP/out"
+          REMOTE="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          if git ls-remote --exit-code --heads "$REMOTE" output >/dev/null; then
+            git clone -q --depth 1 --branch output "$REMOTE" "$OUT"
+          else
+            mkdir -p "$OUT" && git -C "$OUT" init -q -b output
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore(profile): regenerate assets"
-          git push
+          find "$OUT" -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp assets/*.svg data/contributions.json "$OUT"/
+          cd "$OUT"
+          git add -A
+          if git rev-parse -q --verify HEAD >/dev/null && git diff --cached --quiet; then
+            echo "output unchanged"; exit 0
+          fi
+          # orphan, single commit: the branch never grows a history
+          git checkout -q --orphan fresh
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "render"
+          git push -q -f "$REMOTE" fresh:output
+
+      - name: One-time cleanup + README cartridge sync on main
+        run: |
+          # README's cartridge block is regenerated from data/projects.yml; only
+          # commits when you changed that file. Also drops the old assets/ dir once.
+          if git ls-files --error-unmatch assets >/dev/null 2>&1 && ! grep -q '\./assets/' README.md; then
+            git rm -r -q --cached assets
+          fi
+          git add README.md
+          if git diff --cached --quiet; then echo "main unchanged"; exit 0; fi
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "chore(profile): sync README / drop tracked assets"
+          git push -q
